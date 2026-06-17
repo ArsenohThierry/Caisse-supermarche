@@ -27,7 +27,6 @@ CREATE TABLE AchatProduit (
     idAchat INTEGER NOT NULL,
     idProduit INTEGER NOT NULL,
     qte INTEGER NOT NULL CHECK (qte > 0),
-    pu REAL NOT NULL CHECK (pu >= 0),
 
     FOREIGN KEY (idAchat)
         REFERENCES Achat(id)
